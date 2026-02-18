@@ -1,4 +1,4 @@
-26814808929461854
+26820122558628188
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106497,6 +106497,27 @@ CONN-TH_HX25418-3WA
 0
 3
 3
+lcsc
+JOYTICK-TH_YF16-DFL7.2-B5KO-45-10-B5KO-55--RG-A22
+
+
+0
+10
+10
+lcsc
+OLED-TH_L35.4-W33.5_HS13L03W2C01
+
+
+0
+8
+4
+lcsc
+OLED-TH_L38.0-W12.0_HS91L02W2C01
+
+
+0
+4
+4
 lcsc
 QFN-16_L3.0-W3.0-P0.50-BL-EP1.7
 
