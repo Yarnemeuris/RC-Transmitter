@@ -17,7 +17,7 @@ struct payloadStruct {
   struct stateStruct state;
 };
 
-stateStruct* sharedState = new stateStruct; //create a state object on the heap so it's shared between the cores.
+stateStruct* sharedState = new stateStruct;  //create a state object on the heap so it's shared between the cores.
 
 RF24 radio(CE_PIN, CSN_PIN);
 
@@ -28,13 +28,13 @@ void setup1() {
   setupInputs();
   setupRF24();
 
-  *sharedState = getState(); //set initial values for the shared state
+  *sharedState = getState();  //set initial values for the shared state
 }
 
 void loop1() {
   if (millis() > nextUpdate) {
+    nextUpdate = millis() + millisPerUpdate;
     update();
-    nextUpdate += millisPerUpdate;
   }
 }
 
@@ -90,7 +90,7 @@ struct stateStruct getState() {
   struct stateStruct currentState;
 
   for (uint8_t i = 0; i < sizeof(axes) / sizeof(axes[0]); i++) {
-    currentState.axes[i] = map(analogRead(axes[i]), 0, 4095, -2048, 2048);
+    currentState.axes[i] = map(analogRead(axes[i]), 0, 4096, -2048, 2048);
   }
 
   for (uint8_t i = 0; i < sizeof(buttons) / sizeof(buttons[0]); i++) {
