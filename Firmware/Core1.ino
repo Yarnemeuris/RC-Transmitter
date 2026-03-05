@@ -1,10 +1,11 @@
 const uint8_t RXAddress[] = "RCT";
 const uint8_t TXAdress[] = "1RX";
 
-#define millisPerUpdate floor(1000 / updateFreq)
-
 const uint8_t buttons[6] = { 20, 21, 22, 23, 24, 25 };
 const uint8_t axes[4] = { 26, 27, 28, 29 };
+
+uint8_t invertButtons = 0b0000000;                                                //set to 1 to invert button
+uint8_t axesSetinngs[4][2] = { { 0, 100 }, { 0, 100 }, { 0, 100 }, { 0, 100 } };  //first expo 0-100 then rate 0-100
 
 uint64_t nextUpdate = millis();
 
@@ -98,4 +99,18 @@ struct stateStruct getState() {
   }
 
   return currentState;
+}
+
+struct stateStruct processState(struct stateStruct state) {
+  state.buttons ^= invertButtons;  // XOR to invert buttons
+
+  for (uint8_t i = 0; i < 4; i++) {
+    float start = state.axes[i] / 2048.0;
+    float expo = axesSetinngs[i][0] / 100.0;
+    float rate = axesSetinngs[i][1] / 100.0;
+    float edited = ((1-expo)*start + expo * std::pow(start, 3)) * rate;
+    state.axes[i] = edited*2048;
+  }
+
+  return state;
 }

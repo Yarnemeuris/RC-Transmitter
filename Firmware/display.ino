@@ -11,6 +11,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire1, -1);
 void setupDisplay() {
   Wire1.setSDA(2);
   Wire1.setSCL(3);
+  Wire1.setClock(400000);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.clearDisplay();
   display.display();
@@ -20,28 +21,7 @@ void updateDisplay() {
   GFXcanvas1 canvas(SCREEN_WIDTH, SCREEN_HEIGHT);
 
   drawBattery(&canvas);
-
-  for (uint8_t i = 0; i < sizeof(buttonDisplayLocX); i++) {
-    if (bitRead(sharedState->buttons, i)) {
-      canvas.fillCircle(buttonDisplayLocX[i], 28, 2, 1);
-    } else {
-      canvas.drawCircle(buttonDisplayLocX[i], 28, 2, 1);
-    }
-  }
-
-  for (uint8_t i = 0; i < 4; i++) {
-    uint8_t x = 1 + 65 * ((i & 2) == 2);
-    uint8_t y = 7 + 10 * (i & 1);
-    canvas.drawRect(x, y, 30, 7, 1);
-    canvas.drawRect(30 + x, y, 30, 7, 1);
-
-    int16_t axis = sharedState->axes[i];
-    if (axis < 0) {
-      canvas.fillRect(x + 30 - axis/70, y + 1, axis/70, 5, 1);
-    } else {
-      canvas.fillRect(x + 30, y + 1, axis/70, 5, 1);
-    }
-  }
+  drawInputs(&canvas);
 
   display.clearDisplay();
   display.drawBitmap(0, 0, canvas.getBuffer(), SCREEN_WIDTH, SCREEN_HEIGHT, 1, 0);
@@ -68,4 +48,28 @@ void drawBattery(struct GFXcanvas1* canvas) {
   }
 
   canvas->fillRect(126 - batteryPercentage / 20, 2, batteryPercentage / 20, 3, 1);
+}
+
+void drawInputs(struct GFXcanvas1* canvas) {
+  for (uint8_t i = 0; i < sizeof(buttonDisplayLocX); i++) {
+    if (bitRead(sharedState->buttons, i)) {
+      canvas->fillCircle(buttonDisplayLocX[i], 28, 2, 1);
+    } else {
+      canvas->drawCircle(buttonDisplayLocX[i], 28, 2, 1);
+    }
+  }
+
+  for (uint8_t i = 0; i < 4; i++) {
+    uint8_t x = 1 + 65 * ((i & 2) == 2);
+    uint8_t y = 7 + 10 * (i & 1);
+    canvas->drawRect(x, y, 30, 7, 1);
+    canvas->drawRect(30 + x, y, 30, 7, 1);
+
+    int16_t axis = sharedState->axes[i];
+    if (axis < 0) {
+      canvas->fillRect(x + 30 - axis / 70, y + 1, axis / 70, 5, 1);
+    } else {
+      canvas->fillRect(x + 30, y + 1, axis / 70, 5, 1);
+    }
+  }
 }
