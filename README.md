@@ -18,15 +18,13 @@ In the transmitter are 2 PCBs. One is a 2 layer board for all the wireless thing
 The other one is 4 layers and has everything else on it: the input, microcontroller, battery management. 
 
 <img src="Images/Main_Board_Font.png" width=500>
-<img src="Images/Main_Board_back.png" width=500>
-
-More info on the 2 boards can be found here.
+<img src="Images/Main_Board_Back.png" width=500>
 
 ## Firmware
-The firmware is setup to transmit everythingvia the second core of the rp2040. This makes sure that it's always available to transmit. The main core does everything else, like drawing to the screen and comunicating with the other ICs. Because this happends on a seperate core, a long I²C message won't stop the transmission. Flashing the board canbe done by shorting the two program pads while booting the board, and flashing the uf2 file via the USb connection.
+The firmware is setup to transmit everythingvia the second core of the rp2040. This makes sure that it's always available to transmit. The main core does everything else, like drawing to the screen and comunicating with the other ICs. Because this happends on a seperate core, a long I²C message won't stop the transmission. Flashing the board can be done by shorting the two program pads while booting the board, and flashing the [uf2 file](https://github.com/Yarnemeuris/RC-Transmitter/blob/main/Firmware/Firmware.uf2) via the USb connection.
 
 ## BOM
-This is the simplified BOM. You can find the full and other BOMs here.
+This is the simplified BOM. You can find the full and other BOMs [here](https://github.com/Yarnemeuris/RC-Transmitter/tree/main/BOM).
 
 |Category  |Item           |Quantity|Unit Price|Total Price|Running Total|
 |----------|---------------|--------|----------|-----------|-------------|
