@@ -1,0 +1,35 @@
+|Item      |Quantity       |Minimum Order Quantity|Unit Price|Total Price|URL   |Running Total                                     |
+|----------|---------------|----------------------|----------|-----------|------|--------------------------------------------------|
+|Capacitor 10µF|3              |10                    | $ 0.0723 |$0.72      |https://www.lcsc.com/product-detail/C440198.html|$0.72                                             |
+|Capacitor 22pF|2              |20                    | $ 0.0203 |$0.41      |https://www.lcsc.com/product-detail/C2176129.html|$1.13                                             |
+|Capacitor 100nF|11             |100                   | $ 0.0013 |$0.13      |https://www.lcsc.com/product-detail/C1525.html|$1.26                                             |
+|Capacitor 1µF|2              |100                   | $ 0.0021 |$0.21      |https://www.lcsc.com/product-detail/C14445.html|$1.47                                             |
+|Capacitor 47µF|1              |1                     | $ 0.2644 |$0.26      |https://www.lcsc.com/product-detail/C76659.html|$1.73                                             |
+|Capacitor 47nF|1              |100                   | $ 0.0017 |$0.17      |https://www.lcsc.com/product-detail/C285062.html|$1.90                                             |
+|Capacitor 4,7µF|1              |50                    | $ 0.0053 |$0.27      |https://www.lcsc.com/product-detail/C23733.html|$2.17                                             |
+|Battery Connector|1              |1                     | $ 0.5489 |$0.55      |https://www.lcsc.com/product-detail/C428722.html|$2.72                                             |
+|battery Balancing Connector|1              |5                     | $ 0.0775 |$0.39      |https://www.lcsc.com/product-detail/C704579.html|$3.10                                             |
+|4 Pin Header|1              |5                     | $ 0.0281 |$0.14      |https://www.lcsc.com/product-detail/C32713270.html|$3.25                                             |
+|8 Pin Connector|1              |6                     | $ 0.1383 |$0.83      |https://www.lcsc.com/product-detail/C19268754.html|$4.08                                             |
+|Inductor 1µH|1              |10                    | $ 0.0580 |$0.58      |https://www.lcsc.com/product-detail/C531288.html|$4.66                                             |
+|OLED Screen|1              |1                     | $ 2.1094 |$2.11      |https://www.lcsc.com/product-detail/C5248081.html|$6.76                                             |
+|Resistor 5,1KΩ|6              |100                   | $ 0.0006 |$0.06      |https://www.lcsc.com/product-detail/C2906874.html|$6.82                                             |
+|Resistor 10KΩ|5              |100                   | $ 0.0008 |$0.08      |https://www.lcsc.com/product-detail/C60490.html|$6.90                                             |
+|Resistor 1KΩ|2              |100                   | $ 0.0008 |$0.08      |https://www.lcsc.com/product-detail/C106235.html|$6.98                                             |
+|Resistor 27Ω|2              |100                   | $ 0.0008 |$0.08      |https://www.lcsc.com/product-detail/C138021.html|$7.06                                             |
+|Resistor 200KΩ|1              |100                   | $ 0.0008 |$0.08      |https://www.lcsc.com/product-detail/C114763.html|$7.14                                             |
+|Resistor 10mΩ|1              |20                    | $ 0.0248 |$0.50      |https://www.lcsc.com/product-detail/C7467248.html|$7.64                                             |
+|Resistor 1,3MΩ|1              |50                    | $ 0.0060 |$0.30      |https://www.lcsc.com/product-detail/C203121.html|$7.94                                             |
+|Resistor 300Ω|1              |100                   | $ 0.0026 |$0.26      |https://www.lcsc.com/product-detail/C3013269.html|$8.20                                             |
+|Power Switch|1              |1                     | $ 0.4783 |$0.48      |https://www.lcsc.com/product-detail/C388633.html|$8.68                                             |
+|Toggle Switch Right Angle|2              |1                     | $ 0.8278 |$1.66      |https://www.lcsc.com/product-detail/C1788496.html|$10.33                                            |
+|Toggle Switch|4              |1                     | $ 1.6116 |$6.45      |https://www.lcsc.com/product-detail/C908284.html|$16.78                                            |
+|Fuel Gauge|1              |1                     | $ 5.2813 |$5.28      |https://www.lcsc.com/product-detail/C7457893.html|$22.06                                            |
+|Voltage Regulator|1              |10                    | $ 0.0385 |$0.39      |https://www.lcsc.com/product-detail/C347222.html|$22.45                                            |
+|Battery Charger|1              |1                     | $ 2.5071 |$2.51      |https://www.lcsc.com/product-detail/C2761614.html|$24.95                                            |
+|Flash Storage|1              |1                     | $ 2.9654 |$2.97      |https://www.lcsc.com/product-detail/C401671.html|$27.92                                            |
+|RP2040    |1              |1                     | $ 0.9482 |$0.95      |https://www.lcsc.com/product-detail/C2040.html|$28.87                                            |
+|Joystick  |1              |1                     | $ 0.4843 |$0.48      |https://www.lcsc.com/product-detail/C37323741.html|$29.35                                            |
+|Joystick  |1              |1                     | $ 0.4224 |$0.42      |https://www.lcsc.com/product-detail/C37323739.html|$29.77                                            |
+|USB-C Port|1              |1                     | $ 0.6363 |$0.64      |https://www.lcsc.com/product-detail/C5446865.html|$30.41                                            |
+|Crystal Oscillator|1              |10                    | $ 0.0737 |$0.74      |https://www.lcsc.com/product-detail/C9002.html|$31.15                                            |

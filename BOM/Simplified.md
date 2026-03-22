@@ -1,0 +1,8 @@
+|Category  |Item           |Quantity|Unit Price|Total Price|Running Total|
+|----------|---------------|--------|----------|-----------|-------------|
+|Components|LCSC Components|1       |$43.52    |$43.52     |$43.52       |
+|Components|LCSC Shipping  |1       |$11.44    |$11.44     |$54.96       |
+|PCB       |RF PCB         |1       |$2.10     |$2.10      |$57.06       |
+|PCB       |Main PCB       |1       |$7.00     |$7.00      |$64.06       |
+|PCB       |Stencil        |1       |$12.00    |$12.00     |$76.06       |
+|PCB       |JLCPCB Shipping|1       |$20.15    |$20.15     |$96.21       |
