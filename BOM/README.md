@@ -6,4 +6,4 @@ These are the included BOMs:
 - Main Board: The components from LCSC needed for the Main PCB.
 - Rf Board: The components from LCSC needed for one Rf PCB.
 
-If you want BOMs specificly for LCSC/JLCPCB look in the PCB files.
+If you want BOMs specificly for LCSC/JLCPCB look in [the PCB files](https://github.com/Yarnemeuris/RC-Transmitter/tree/main/PCB/PCBs).
